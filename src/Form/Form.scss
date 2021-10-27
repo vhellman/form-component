@@ -1,0 +1,92 @@
+
+$background: #fff;
+$foreground: #303030;
+$accent: #fa7122;
+$accent-hover: rgb(255, 159, 103);
+$white: #fff;
+
+$ff-headings: 'Roboto', sans-serif;
+$ff-body: 'Roboto', sans-serif;
+
+section {
+    background: $background;
+    padding: 3em;
+    box-shadow: 0.4em 0.4em 0.7em rgba(0, 0, 0, 0.3);
+    border-radius: 0.5em;
+    font-family: $ff-body;
+    font-weight: 300;
+    width: 30%;
+    form {
+        width: 100%;
+        legend {
+            font-size: 2rem;
+            font-family: $ff-headings;
+            margin-bottom: 1em;
+            font-weight: 500;
+            color: $foreground;
+        }
+
+        .input-field {
+            position: relative;
+
+            label {
+                position: absolute;
+                padding: 0 0.5rem;
+                top: 0.7rem;
+                left: 0.4rem;
+                color: #303030;
+                letter-spacing: 0.05rem;
+            }
+
+            input {
+                width: 100%;
+                padding: 0.5em;
+                border-radius: 0.25rem;
+                border: 1px solid gainsboro;
+                outline: 0;
+                margin-bottom: 2em;
+
+                font-size: 1.125rem;
+                color: $foreground;
+
+                &:hover {
+                    border: 1px solid grey;
+                }
+
+                &:focus {
+                    border: 1px solid $accent;
+                }
+
+                &:focus + label {
+                    color: $accent;
+                    background: $background;
+                    transform: translateY(-1.3rem) translateX(-.5rem) scale(0.75);
+                    transition: transform 0.3s ease-in-out;
+                }
+            }
+           
+            
+            
+        }
+
+        button {
+            display: block;
+            border: 0;
+            font-size: 1rem;
+            padding: 0.6rem 1.2rem;
+            border-radius: 0.3rem;
+            background: $accent;
+            font-weight: 600;
+            color: $white;
+
+            &:hover, &::after {
+                transition: transform 250ms ease-in-out;
+                transform: scale(1.05);
+                background: $accent-hover;
+                color: $foreground;
+            }
+        }
+    }
+
+}
+

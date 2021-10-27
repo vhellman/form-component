@@ -1,10 +1,9 @@
+@import './Form/Form.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@300;500;700;900&display=swap');
 
 $backdrop: #eee;
-$background: #fff;
-$foreground: #151515;
-$accent: #fa7122;
-$accent-hover: rgb(255, 159, 103);
-$white: #fff;
+
+
 
 * {
   box-sizing: border-box;
@@ -14,68 +13,12 @@ body {
   margin: 0;
   padding: 0;
   background: $backdrop;
+  padding: 3em;
 }
 
 .App {
-  width: 100%;
   height: 100vh;
-  padding: 2em;
-}
-
-section{
-  width: 100%;
-  height: 100%;
-}
-
-form {
-  background: $background;
-  padding: 2em;
-  border-radius: 0.5rem;
-  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
-}
-
-.input-field {
-  position: relative;
-  margin-block: 1em;
-}
-
-form input {
-  width: 100%;
-  padding: 0.5rem;
-  outline: none;
-  border: 1px gainsboro solid;
-  border-radius: 4px;
-
-  &:focus{
-    border: 1px solid $accent;
-  }
-  &:hover{
-    border: 1px solid grey;
-  }
-}
-
-button {
-  outline: none;
-  border: none;
-  font-size: 1.25rem;
-  padding: 0.6rem 1.5rem;
-  background: $accent;
-  border-radius: 4px;
-  color: $white;
-  box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.3);
-  
-  &:hover {
-    background: $accent-hover;
-    transform: scale(1.04);
-    color: $foreground;
-    transition: all 0.3s ease-in-out;
-  }
-}
-
-.container {
-  margin: 0 auto;
-  height: 100%;
   display: flex;
+  align-items:center;
   justify-content: center;
-  align-items: center;
 }

@@ -4,15 +4,15 @@ const Form = () => {
     return (
         <section className='container'>
                 <form>
-                <legend> Form page </legend>
+                    <legend> Form page </legend>
                     <div className='input-field'>
-                        <label>Email address</label>
                         <input className='input' type='email' name='email' required />
+                        <label className='input-label'>Email</label>
                     </div>
 
                     <div className='input-field'>
-                        <label>Password</label>
                         <input className='input' type='password' name='password' required />
+                        <label>Password</label>
                     </div>
                     
                     <button type='submit' className='btn btn-submit'>Login</button>
