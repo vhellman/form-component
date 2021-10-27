@@ -9,6 +9,7 @@ const useForm = (callback) => {
         callback();
     }
     const handleChange = (event) => {
+        // do we need to persist this event? Why?
         setValues( values => ({ ...values, [event.target.name]: event.target.value }) );
     }
 

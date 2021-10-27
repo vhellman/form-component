@@ -48,7 +48,7 @@ section {
 
                 font-size: 1.125rem;
                 color: $foreground;
-
+                
                 &:hover {
                     border: 1px solid grey;
                 }
@@ -57,7 +57,9 @@ section {
                     border: 1px solid $accent;
                 }
 
-                &:focus + label {
+                &:focus + label,
+                &:active + label,
+                &:not(:placeholder-shown) + label {
                     color: $accent;
                     background: $background;
                     transform: translateY(-1.3rem) translateX(-.5rem) scale(0.75);
